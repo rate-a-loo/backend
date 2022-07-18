@@ -4,7 +4,7 @@ import { Location } from "./models/location.ts";
 import { Review } from "./models/review.ts";
 import { oakCors } from "./mod.ts";
 
-const HOST = '127.0.0.1'
+const HOST = '0.0.0.0'
 const PORT = 7700
 
 // Database
