@@ -7,10 +7,10 @@ export async function saveBlobData(data: Uint8Array, contentType: string): Promi
     if(fileExtension === undefined) {
         throw new Error("invalid content type");
     }
-    await Deno.writeFile(`./data/blob/${identifier}.${fileExtension}`, data);
+    await Deno.writeFile(`./blob/${identifier}.${fileExtension}`, data);
     return `${identifier}.${fileExtension}`;
 }
 
 export async function loadBlobData(identifier: string): Uint8Array {
-    return await Deno.readFile(`./data/blob/${identifier}`);
+    return await Deno.readFile(`./blob/${identifier}`);
 }

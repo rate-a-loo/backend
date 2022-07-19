@@ -4,5 +4,4 @@ tmp/
 secrets.json
 settings.json
 data/**/*
-data/blob/**/*
-!data/blob/
+blob/**/*
