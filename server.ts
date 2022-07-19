@@ -23,6 +23,7 @@ const app = new Application();
 app.use(oakCors({
     origin: [
         "https://api.ratealoo.desante.dev",
+        "https://ratealoo.desante.dev",
         `http://${HOST}:${PORT}`
     ]
 }));
