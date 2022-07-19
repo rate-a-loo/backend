@@ -20,7 +20,12 @@ db.sync();
 
 // App
 const app = new Application();
-app.use(oakCors());
+app.use(oakCors({
+    origin: [
+        "https://api.ratealoo.desante.dev",
+        `http://${HOST}:${PORT}`
+    ]
+}));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
